@@ -16,6 +16,9 @@ pip install -r ${OPENSHIFT_REPO_DIR}requirements.openshift.txt --log /tmp/pip.lo
 echo "Executing 'python ${OPENSHIFT_REPO_DIR}/manage.py syncdb --noinput'"
 python "$OPENSHIFT_REPO_DIR"./manage.py syncdb --noinput --settings=$DJANGO_SETTINGS
 
+echo "Executing 'python ${OPENSHIFT_REPO_DIR}/manage.py migrate'"
+python "$OPENSHIFT_REPO_DIR"./manage.py migrate --settings=$DJANGO_SETTINGS
+
 echo "Executing 'python ${OPENSHIFT_REPO_DIR}/manage.py make_admin'"
 python "$OPENSHIFT_REPO_DIR"./manage.py make_admin --settings=$DJANGO_SETTINGS
 
