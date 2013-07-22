@@ -1,0 +1,9 @@
+admin_password: testtest
+application_name: mayantest
+django_settings: richard.settings
+managepy: ./manage.py
+media_url: /media/
+provider: openshift
+pyversion: Python2.7
+requirements: requirements/development.txt
+static_url: /static/

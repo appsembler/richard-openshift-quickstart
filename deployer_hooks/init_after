@@ -1,0 +1,15 @@
+#!/bin/bash
+REQUIREMENTS=requirements/development.txt
+PYVERSION=Python2.7
+STATIC_URL=/static/
+DJANGO_SETTINGS=richard.settings
+ADMIN_PASSWORD=testtest
+PROVIDER=openshift
+APPLICATION_NAME=mayantest
+MANAGEPY=./manage.py
+MEDIA_URL=/media/
+
+sh deployer_scripts/setgiturl.sh $APPLICATION_NAME
+chmod a+x .openshift/action_hooks/*
+
+echo "$0 has been executed!"
