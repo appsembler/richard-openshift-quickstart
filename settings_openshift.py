@@ -18,7 +18,7 @@ REPO_ROOT = os.path.abspath(os.path.join(PROJECT_ROOT, '..'))
 sys.path.insert(0, REPO_ROOT)
 sys.path.insert(0, PROJECT_ROOT)
 
-from settings import *
+from richard.settings import *
 
 #############
 # DATABASES #
