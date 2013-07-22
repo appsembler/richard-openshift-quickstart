@@ -23,4 +23,4 @@ echo "Executing 'python ${OPENSHIFT_REPO_DIR}/manage.py make_admin'"
 python "$OPENSHIFT_REPO_DIR"./manage.py make_admin --settings=$DJANGO_SETTINGS
 
 echo "Executing 'python ${OPENSHIFT_REPO_DIR}/manage.py collectstatic --noinput -v0'"
-python "$OPENSHIFT_REPO_DIR"{{ managepy }} collectstatic --noinput -v0 --settings=$DJANGO_SETTINGS
+python "$OPENSHIFT_REPO_DIR"./manage.py collectstatic --noinput -v0 --settings=$DJANGO_SETTINGS
